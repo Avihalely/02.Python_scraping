@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # Scrapy settings for news_scraper project
 #
 # For simplicity, this file contains only settings considered important or
@@ -12,12 +14,16 @@ BOT_NAME = 'news_scraper'
 SPIDER_MODULES = ['news_scraper.spiders']
 NEWSPIDER_MODULE = 'news_scraper.spiders'
 
+CLOSESPIDER_PAGECOUNT=10
+
+FEED_URI='news_articles.json'
+FEED_FORMAT='json'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'news_scraper (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32

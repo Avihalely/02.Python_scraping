@@ -2,7 +2,7 @@
 import scrapy
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
-from article_crawler.items import Article
+from article_crawler.article_crawler.items import Article
 
 class WikipediaSpider(CrawlSpider):
     name = 'wikipedia'
